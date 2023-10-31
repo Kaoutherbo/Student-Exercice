@@ -31,6 +31,11 @@ int getChar(char *message);
 int getFloat(char *message);
 Student *createStudent();
 Marks *createMarks();
+float calculateAverage(Marks *head);
+Marks* insertEnd(Marks *head);
+Student* insertEnd(Student *head);
+Student* studentList(Student *head, int numStudent);
+Marks* markList(Marks *head, int numMarks);
 void displayList(Student *head);
 
 #endif

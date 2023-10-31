@@ -10,6 +10,6 @@ char* getChar(char *message)
 {
     int input;
     printf("%s",message);
-    scanf("%d",&input);
+    scanf("%s",&input);
     return input;
 }
