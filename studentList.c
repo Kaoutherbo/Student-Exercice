@@ -1,6 +1,6 @@
 #include "main.h"
 
-Student* insertEnd(Student *head)
+Student* insertEndS(Student *head)
 {   
     if(head == NULL)
     {
@@ -31,7 +31,7 @@ Student* studentList(Student *head, int numStudent)
     {
         for(int i = 1; i < numStudent; i++)
         {
-            newStudent = insertEnd(newStudent);
+            newStudent = insertEndS(newStudent);
         }
     }
     return head;

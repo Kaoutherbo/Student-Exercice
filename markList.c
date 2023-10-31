@@ -1,6 +1,6 @@
 #include "main.h"
 
-Marks* insertEnd(Marks *head)
+Marks* insertEndM(Marks *head)
 {   
     if(head == NULL)
     {
@@ -30,7 +30,7 @@ Marks* markList(Marks *head, int numMarks)
     {
         for(int i = 1; i < numMarks; i++)
         {
-            newMark = insertEnd(newMark);
+            newMark = insertEndM(newMark);
         }
     }
     return head;
