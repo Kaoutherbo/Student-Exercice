@@ -4,7 +4,7 @@ Marks* insertEndM(Marks *head)
 {   
     if(head == NULL)
     {
-        head = createStudent();
+        head = createMarks();
     }
     else
     {
@@ -13,12 +13,12 @@ Marks* insertEndM(Marks *head)
         {
             temp = temp->nextMark;
         }
-        temp->nextMark = createStudent();
+        temp->nextMark = createMarks();
     }
   
     return head;
 }
-Marks* markList(Marks *head, int numMarks)
+Marks *markList(Marks *head, int numMarks)
 {
     Marks *newMark;
     if(head == NULL)
