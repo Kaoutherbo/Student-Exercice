@@ -1,6 +1,6 @@
 #include "main.h"
 
-Student *createStudent(int numMarks)
+Student *createStudent()
 {
     Student *student = (Student *)malloc(sizeof(Student));
     Marks *mark = (Marks *)malloc(sizeof(Marks));
@@ -12,11 +12,12 @@ Student *createStudent(int numMarks)
     int Id = getInt("Enter your Id : ");
     char *fName = getChar("Enter your first name: ");
     char *lName = getChar("Enter your last name: ");
+    int numMarks = getInt("How many marks you have ? : ");
 
-    student->ID=Id;
+    student->ID = Id;
     strcpy(student->fName, fName);
     strcpy(student->lName, lName);
-    mark = createMarks(numMarks);
+    mark = MarkList(numMarks);
     student->average = calculateAverage(mark);
     student->mark = mark;
     student->nextStudent = NULL;

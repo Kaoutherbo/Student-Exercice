@@ -1,12 +1,12 @@
 #include "main.h"
 
-Marks* createMarks(int numMarks)
+Marks* createMarks()
 {
     int coef;
     float mark;
     do{
-        coef = getInt("Enter the coef of the module number 1 : ");
-        mark = getFloat("Enter the mark of the module number 1 : ");
+        coef = getInt("Enter the coef of this module : ");
+        mark = getFloat("Enter the mark of this module : ");
     }while(coef <= 0 || mark < 0);
 
     Marks *marks = (Marks*)malloc(sizeof(Marks));

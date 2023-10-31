@@ -29,9 +29,9 @@ struct Student{
 int getInt(char *message);
 int getChar(char *message);
 int getFloat(char *message);
-Student *createStudent(int);
-Student *addStudent(Student *, int);
-Marks *createMarks(int);
+Student *createStudent();
+Marks *createMarks();
+
 
 
 #endif
