@@ -31,7 +31,6 @@ int getChar(char *message);
 int getFloat(char *message);
 Student *createStudent();
 Marks *createMarks();
-
-
+void displayList(Student *head);
 
 #endif
