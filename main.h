@@ -27,8 +27,8 @@ struct Student{
 
 // prototypes of functions
 int getInt(char *message);
-int getChar(char *message);
-int getFloat(char *message);
+char* getChar(char *message);
+float getFloat(char *message);
 Student *createStudent();
 Marks *createMarks();
 float calculateAverage(Marks *head);
