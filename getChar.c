@@ -8,7 +8,7 @@
 */
 char* getChar(char *message)
 {
-    int input;
+    char* input;
     printf("%s",message);
     scanf("%s",&input);
     return input;

@@ -8,7 +8,7 @@
 */
 float getFloat(char *message)
 {
-    int input;
+    float input;
     printf("%s",message);
     scanf("%f",&input);
     return input;
