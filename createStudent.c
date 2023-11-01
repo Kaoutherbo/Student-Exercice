@@ -17,7 +17,7 @@ Student *createStudent()
     student->ID = Id;
     strcpy(student->fName, fName);
     strcpy(student->lName, lName);
-    mark = MarkList(numMarks);
+    mark = markList(mark,numMarks);
     student->average = calculateAverage(mark);
     student->mark = mark;
     student->nextStudent = NULL;
