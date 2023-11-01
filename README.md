@@ -52,4 +52,13 @@ A source file with the `studentList` function for managing a list of students, i
 
 To use this program, compile the source files using a C compiler (e.g., `gcc`) and run the resulting executable. You can enter student information and their corresponding marks, and the program will display the data.
 
-Feel free to modify or extend the code for your specific needs or requirements.
+* This is an explanation to how can you compile and run the files :
+  
+### Compile files:
+```
+gcc -o main *.c
+```
+### Run file:
+```
+./main
+```
