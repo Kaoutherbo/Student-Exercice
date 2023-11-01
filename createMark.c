@@ -1,17 +1,16 @@
 #include "main.h"
 
-Marks* createMarks()
+Marks *createMarks()
 {
     int coef;
     float mark;
-    do{
+    do {
         coef = getInt("Enter the coefficient of this module: ");
         mark = getFloat("Enter the mark of this module: ");
     } while (coef <= 0 || mark < 0);
 
     Marks *marks = (Marks *)malloc(sizeof(Marks));
-    if (!marks)
-    {
+    if (!marks) {
         printf("Error: Memory allocation failed.\n");
         exit(-1);
     }

@@ -12,10 +12,11 @@ Student *createStudent()
     char *fName = getChar("Enter your first name: ");
     char *lName = getChar("Enter your last name: ");
     int numMarks = getInt("How many marks you have? : ");
+    
     student->ID = Id;
     student->fName = fName;
     student->lName = lName;
-    student->average = 0; // Initialize to 0
+    student->average = 0;
     student->mark = markList(NULL, numMarks); // Create the list of marks
     student->nextStudent = NULL;
 
