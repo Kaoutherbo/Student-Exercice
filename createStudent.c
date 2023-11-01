@@ -1,6 +1,13 @@
 #include "main.h"
 
-Student *createStudent()
+/**
+ * createStudent - function that create student
+ * 
+ * @void: no parameter
+ * 
+ * Return: pointer to one student
+*/
+Student *createStudent(void)
 {
     Student *student = (Student *)malloc(sizeof(Student));
 
