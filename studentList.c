@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * studentList - this function create a list of students 
+ * 
+ * @head: pointer to first student
+ * @numStudents: number of students in the list
+ *
+ * Return: pointer to list of students
+*/
 
 Student *studentList(Student *head, int numStudents)
 {

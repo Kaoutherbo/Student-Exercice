@@ -4,7 +4,7 @@
  * markList - this function create a list of marks 
  * 
  * @head: pointer to first mark
- * @numMarks: number of marks of the list
+ * @numMarks: number of marks in the list
  *
  * Return: pointer to list of marks
 */
