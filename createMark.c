@@ -3,11 +3,11 @@
 /**
  * createMarks - function that create mark of student 
  * 
- * no parameter
+ * @void: no parameter
  * 
  * Return: pointer to one mark
 */
-Marks *createMarks()
+Marks *createMarks(void)
 {
     int coef;
     float mark;
