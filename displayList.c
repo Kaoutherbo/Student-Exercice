@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * displayList - procedure that display the content of Student list
+ * 
+ * @head: pointer to Student list
+ * 
+ * Return: void 
+*/
 void displayList(Student *head)
 {
     Student *temp = head;
