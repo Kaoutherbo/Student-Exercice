@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * createMarks - function that create mark of student 
+ * 
+ * no parameter
+ * 
+ * Return: pointer to one mark
+*/
 Marks *createMarks()
 {
     int coef;
