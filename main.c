@@ -8,8 +8,8 @@
 int main()
 {
     Student *students = NULL;
-    int numStudent = getInt("How many student in the class : ");
-    students = studentList(students, numStudent);
+    int numStudents = getInt("How many students in the class : ");
+    students = studentList(students, numStudents);
     displayList(students);
     return 0;
 }

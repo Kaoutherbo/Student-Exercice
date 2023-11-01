@@ -9,7 +9,7 @@
 float getFloat(char *message)
 {
     float input;
-    printf("%s",message);
-    scanf("%f",&input);
+    printf("%s", message);
+    scanf("%f", &input);
     return input;
 }
