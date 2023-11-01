@@ -3,6 +3,7 @@
 Student *createStudent()
 {
     Student *student = (Student *)malloc(sizeof(Student));
+
     if (student == NULL) {
         printf("Memory allocation failed.\n");
         exit(-1);
@@ -16,8 +17,8 @@ Student *createStudent()
     student->ID = Id;
     student->fName = fName;
     student->lName = lName;
-    student->average = 0;
-    student->mark = markList(NULL, numMarks); // Create the list of marks
+    student->mark = markList(NULL, numMarks); // Create a new list of marks for each student
+    student->average = calculateAverage(student->mark);
     student->nextStudent = NULL;
 
     return student;

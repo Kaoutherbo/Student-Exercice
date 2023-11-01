@@ -1,37 +1,23 @@
 #include "main.h"
 
-Marks* insertEndM(Marks *head)
-{
-    if (head == NULL)
-    {
-        head = createMarks();
-    }
-    else
-    {
-        Marks *temp = head;
-        while (temp->nextMark != NULL)
-        {
-            temp = temp->nextMark;
-        }
-        temp->nextMark = createMarks();
-    }
-
-    return head;
-}
-
 Marks *markList(Marks *head, int numMarks)
 {
     Marks *newMark;
-    if (head == NULL)
+    Marks *currentMark = head;
+    
+for (int i = 0; i < numMarks; i++)
     {
         newMark = createMarks();
-        head = newMark;
-    }
-    else
-    {
-        for (int i = 1; i < numMarks; i++)
+        
+        if (head == NULL)
         {
-            newMark = insertEndM(newMark);
+            head = newMark;
+            currentMark = head;
+        }
+        else
+        {
+            currentMark->nextMark = newMark;
+            currentMark = newMark;
         }
     }
     return head;
