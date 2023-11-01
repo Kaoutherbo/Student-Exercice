@@ -3,25 +3,21 @@
 Student *createStudent()
 {
     Student *student = (Student *)malloc(sizeof(Student));
-    Marks *mark = (Marks *)malloc(sizeof(Marks));
-
-    if (!student || !mark){
+    if (student == NULL) {
         printf("Memory allocation failed.\n");
         exit(-1);
     }
-    int Id = getInt("Enter your Id : ");
+
+    int Id = getInt("Enter your ID: ");
     char *fName = getChar("Enter your first name: ");
     char *lName = getChar("Enter your last name: ");
-    int numMarks = getInt("How many marks you have ? : ");
-
+    int numMarks = getInt("How many marks you have? : ");
     student->ID = Id;
-    strcpy(student->fName, fName);
-    strcpy(student->lName, lName);
-    mark = markList(mark,numMarks);
-    student->average = calculateAverage(mark);
-    student->mark = mark;
+    student->fName = fName;
+    student->lName = lName;
+    student->average = 0; // Initialize to 0
+    student->mark = markList(NULL, numMarks); // Create the list of marks
     student->nextStudent = NULL;
 
     return student;
-        
 }
