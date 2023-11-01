@@ -1,6 +1,6 @@
 # Student-Exercice
 
-This is a simple C program for managing student data, including student IDs, names, and marks.
+This is a simple C program for managing student data, including student IDs, names, and marks using `Linked List`.
 
 ## Files in the Project
 
