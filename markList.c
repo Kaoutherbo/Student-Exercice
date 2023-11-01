@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * markList - this function create a list of marks 
+ * 
+ * @head: pointer to first mark
+ * @numMarks: number of marks of the list
+ *
+ * Return: pointer to list of marks
+*/
+
 Marks *markList(Marks *head, int numMarks)
 {
     Marks *newMark;
